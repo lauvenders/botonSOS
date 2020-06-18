@@ -1,0 +1,8 @@
+endpoints {
+  action-endpoints {
+    action-endpoint (getGeoPoint) {
+      accepted-inputs (geoPoint, mensajeAlerta)
+      local-endpoint ("getGeoPoint.js")
+    }
+  }
+}

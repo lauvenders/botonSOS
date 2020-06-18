@@ -1,0 +1,3 @@
+structure (mensajeAlerta) {
+  description (Mensaje de alerta configurado para iniciar la aplicación)
+}

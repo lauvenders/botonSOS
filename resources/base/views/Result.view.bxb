@@ -1,0 +1,8 @@
+result-view {
+	match {
+		mensajeAlerta (mensajeLoc)
+	}
+	
+	render {
+	}
+}

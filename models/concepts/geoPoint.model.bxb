@@ -1,0 +1,4 @@
+structure (geoPoint) {
+  description (Localización actual)
+  role-of (geo.CurrentLocation)
+}

@@ -1,0 +1,11 @@
+structure (mensajeLoc) {
+  description (Localización y mensaje de alerta)
+  property (mensajeAlerta) {
+    type (mensajeAlerta)
+    min (Optional) max (One)
+  }
+  property (geoPoint) {
+    type (geoPoint)
+    min (Optional) max (One)
+  }
+}
