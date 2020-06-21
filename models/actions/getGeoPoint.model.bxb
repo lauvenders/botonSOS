@@ -1,26 +1,16 @@
 action (getGeoPoint) {
-	description (__DESCRIPTION__)
-	type (Constructor)
-	collect {
-		input (geoPoint) {
-			type (geoPoint)
-			min (Required) max (One)
-			default-init {
-				intent {
-					goal: getGeoPoint
-					route: geo.CurrentLocation
-				}
-			}
+  description (Inicializar geoPoint con la ubicación actual)
+  type (Constructor)
+  collect {
+    input (geoPoint) {
+      type (geoPoint)
+      min (Required) max (One)
 		}
-		input (mensajeAlerta) {
-			type (mensajeAlerta)
-			min (Optional) max (One)
-			default-init {
-				intent {
-					goal { mensajeAlerta }
-				}
-			}
-		}
-	}
-	output (mensajeLoc)
+		
+    input (mensajeAlerta) {
+      type (mensajeAlerta)
+      min (Required) max (One)
+    }
+  }
+  output (mensajeLoc)
 }

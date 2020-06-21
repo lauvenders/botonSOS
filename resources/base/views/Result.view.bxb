@@ -1,8 +1,28 @@
 result-view {
-	match {
-		mensajeAlerta (mensajeLoc)
-	}
-	
-	render {
-	}
+  match {
+    mensajeLoc (mensajeLoc)
+  }
+  
+  render {
+    if ("mensajeLoc.mensajeAlerta == 'ayuda'") {
+      if (size(mensajeLoc) == 1) {
+        layout {
+          section {
+            content {
+              single-line {
+                text {
+                  style (Detail_M)
+                  value ("#{value(mensajeLoc.mensajeAlerta)}")
+                }
+                text {
+                  style (Detail_M)
+                  value ("#{value(mensajeLoc.geoPoint)}")
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }

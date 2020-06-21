@@ -1,5 +1,5 @@
 train (t-0kc6loaq1k7rgurl5cuy3ltqh) {
-  utterance ("[g:mensajeLoc] prueba {[g:mensajeAlerta] (ayuda)[v:mensajeLoc]}")
-  plan (Y2BlkE6tSMwtyEnVS8ovyc8L9g/Wy03NK07MSvXJT2aQwZBMTy1xT80PyM/MK2GQxCILlZLDZapjTmpRSSJ+W1kZGBmYGJgZWICQAciG8BgZQIAJCBmAPAawPCMDMwA=)
-  last-modified (1592517770525)
+  utterance ("[g:getGeoPoint] prueba (ayuda)[v:mensajeAlerta]")
+  plan (Y2BhkE6tSMwtyEnVS8ovyc8L9g/Wy03NK07MSvXJT2aQwZBMTy1xT80PyM/MK2GQxCILlZLDZapjTmpRSSIDMwMjAxOQZADSIAgBTEAWUAwA)
+  last-modified (1592750468055)
 }
