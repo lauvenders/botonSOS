@@ -4,5 +4,13 @@ endpoints {
       accepted-inputs (geoPoint, mensajeAlerta)
       local-endpoint ("getGeoPoint.js")
     }
+    action-endpoint (setMensajeAlerta) {
+      accepted-inputs (mensajeAlertaConfig)
+      local-endpoint ("setMensajeAlerta.js")
+    }
+    action-endpoint (setContacto) {
+      accepted-inputs (contacto)
+      local-endpoint ("setContacto.js")
+    }
   }
 }
