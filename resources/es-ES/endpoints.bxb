@@ -1,16 +1,29 @@
 endpoints {
   action-endpoints {
     action-endpoint (getGeoPoint) {
-      accepted-inputs (geoPoint, mensajeAlerta)
+      accepted-inputs (geoPoint, mensajeAlerta, userData)
       local-endpoint ("getGeoPoint.js")
     }
-    action-endpoint (setMensajeAlerta) {
-      accepted-inputs (mensajeAlertaConfig)
-      local-endpoint ("setMensajeAlerta.js")
+
+    action-endpoint (getUserData) {
+      accepted-inputs ($vivContext)
+      local-endpoint ("getUserData.js")
     }
-    action-endpoint (setContacto) {
-      accepted-inputs (contacto)
-      local-endpoint ("setContacto.js")
+
+    action-endpoint (prepareUserData) {
+      accepted-inputs ($vivContext, previousUserData, mensajeAlertaConfig, contacto)
+      local-endpoint ("prepareUserData.js")
     }
+
+    action-endpoint (putUserData) {
+      accepted-inputs ($vivContext, userData)
+      local-endpoint ("putUserData.js")
+    }
+
+    action-endpoint (deleteUserData) {
+      accepted-inputs ($vivContext, userData)
+      local-endpoint ("deleteUserData.js")
+    }
+
   }
 }

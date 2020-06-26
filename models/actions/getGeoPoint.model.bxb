@@ -5,12 +5,22 @@ action (getGeoPoint) {
     input (geoPoint) {
       type (geoPoint)
       min (Required) max (One)
-		}
-		
+    }
+    
     input (mensajeAlerta) {
       type (mensajeAlerta)
       min (Required) max (One)
     }
+    
+    input (userData) {
+      type (UserData)
+      min (Optional) max (One)
+      default-init {
+        intent {
+          goal: getUserData
+        }
+      }
+    }
   }
-  output (mensajeLoc)
+  output (Mensaje)
 }

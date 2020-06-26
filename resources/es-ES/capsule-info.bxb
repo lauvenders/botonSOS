@@ -1,13 +1,13 @@
 capsule-info {
-  display-name (Boton SOS)
-  developer-name (Example Developer)
+  display-name (Adsum)
+  developer-name (Equipo 3)
   description ("Example capsule description")
-  dispatch-name (Boton SOS)
+  dispatch-name (Adsum)
   // Set your own image for your capsule's icon
   icon-asset (images/icons/bixby_launcher.png)
   requested-permissions {
     permission (device-location-access) {
-      justification ("To identify your country with your location")
+      justification ("Para enviar la ubicación por mensaje")
     }
   }
 }

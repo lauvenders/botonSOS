@@ -8,4 +8,8 @@ structure (mensajeLoc) {
     type (geoPoint)
     min (Optional) max (One)
   }
+  property (userData) {
+    type (UserData)
+    min (Optional) max (One)
+  }
 }

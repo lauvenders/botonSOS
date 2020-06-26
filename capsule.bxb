@@ -16,7 +16,9 @@ capsule {
     device-location-access
   }
   capsule-imports {
-    import (viv.location) { as (location) version (1.0.37)}
+    import (viv.location) { as (location) version (1.0.39)}
     import (viv.geo) { as (geo) version-from (location)}
+    import (bixby.textMessage) {as (message) version (1.0.0)}
+    import (viv.common) { as (common) version (5.0.0)}
   }
 }

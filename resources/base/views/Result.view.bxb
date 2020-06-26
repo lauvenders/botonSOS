@@ -1,22 +1,29 @@
 result-view {
   match {
-    mensajeLoc (mensajeLoc)
+    Mensaje (this)
   }
   
   render {
-    if ("mensajeLoc.mensajeAlerta == 'ayuda'") {
-      if (size(mensajeLoc) == 1) {
+    if (size(this) == 1) {
         layout {
           section {
             content {
-              single-line {
-                text {
-                  style (Detail_M)
-                  value ("#{value(mensajeLoc.mensajeAlerta)}")
+              cell-card {
+                slot2 {
+                  content {
+                    order (PrimarySecondary)
+                    primary {
+                      template ("#{value(this.geoPoint)}")
+                    }
+                  }
                 }
-                text {
-                  style (Detail_M)
-                  value ("#{value(mensajeLoc.geoPoint)}")
+                
+                on-click {
+                  intent {
+                    goal: SendMessage
+                    route: ComposeMessage
+                    value: $expr (this)
+                  }
                 }
               }
             }
@@ -24,5 +31,4 @@ result-view {
         }
       }
     }
-  }
 }
