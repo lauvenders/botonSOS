@@ -1,0 +1,4 @@
+dialog (Elicitation) {
+  match: contacto (this)
+  template("¿A qué contacto desearía enviar la información?")
+}

@@ -1,0 +1,8 @@
+train (t-c9hm8feaiymwmwzd3j2dqyr18) {
+  utterance ("[g:mensajeAlertaConfig:prompt] (mensaje)[v:mensajeAlertaConfig]")
+  last-modified (1593132993000)
+}
+train (t-ccxev8kc86kn1mrazzv81kddu) {
+  utterance ("[g:getGeoPoint] (mensaje alerta)[v:mensajeAlerta]")
+  last-modified (1593133037054)
+}

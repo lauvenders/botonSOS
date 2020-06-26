@@ -1,0 +1,8 @@
+result-view {
+  match {
+    UserData (this)
+  }
+  
+  message ("¡Perfecto! Prueba a decir #{value(this.mensajeAlertaConfig)} cuando te sientas en peligro y te ayudaré")
+  
+}

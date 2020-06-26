@@ -1,0 +1,15 @@
+structure (UserData) {
+  description ("User data saved to remote db")
+  property (version) {
+    type (viv.core.Integer)
+    min (Optional) max (One)
+  }
+  property (mensajeAlertaConfig) {
+    type (mensajeAlertaConfig)
+    min (Optional) max (One)
+  }
+  property (contacto) {
+    type (contacto)
+    min (Optional) max (Many)
+  }
+}

@@ -1,0 +1,19 @@
+action (putUserData) {
+  description ("Save user data to remote db")
+  type (Calculation)
+  confirm {
+    by (common.Confirmation)
+  }
+  collect {
+    input (userData) {
+      type (UserData)
+      min (Required) max (One)
+      default-init {
+        intent {
+          goal: prepareUserData
+        }
+      }
+    }
+  }
+  output (UserData)
+}

@@ -1,0 +1,26 @@
+action (prepareUserData) {
+  description ("Prepare user data based on your business logic")
+  type (Constructor)
+  collect {
+    // Keep this in place to retrieve any previously stored UserData
+    input (previousUserData) {
+      type (UserData)
+      min (Optional) max (One)
+      default-init {
+        intent {
+          goal: getUserData
+        }
+      }
+    }
+    // Your domain specific inputs
+    input (mensajeAlertaConfig) {
+      type (mensajeAlertaConfig)
+      min (Required) max (One)
+    }
+    input (contacto) {
+      type (contacto)
+      min (Required) max (One)
+    }
+  }
+  output (UserData)
+}

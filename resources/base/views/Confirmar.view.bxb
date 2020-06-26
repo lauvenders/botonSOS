@@ -1,0 +1,47 @@
+confirmation-view {
+  match {
+    common.Confirmation {
+      confirming {
+        putUserData (putUserData) {
+          from-input {
+            UserData (this)
+          }
+        }
+      }
+    }
+  }
+  
+  message("¿Es correcta esta información?")
+  
+  confirm-options {
+    label ("Sí")
+  }
+  abort-options {
+    label {
+      template ("No")
+    }
+  }
+  
+  mode (PositiveEmphasis)
+  
+  render {
+    layout {
+      section {
+        content {
+          single-line {
+            text {
+              style (Detail_L)
+              value ("Mensaje: #{value(this.mensajeAlertaConfig)}")
+            }
+          }
+          single-line {
+            text {
+              style (Detail_L)
+              value ("Contacto: #{value(this.contacto)}")
+            }
+          }
+        }
+      }
+    }
+  }
+}

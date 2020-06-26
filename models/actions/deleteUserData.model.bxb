@@ -1,0 +1,16 @@
+action (deleteUserData) {
+  description ("Delete user data from remote db")
+  type (Calculation)
+  collect {
+    input (userData) {
+      type (UserData)
+      min (Required) max (One)
+      default-init {
+        intent {
+          goal: getUserData
+        }
+      }
+    }
+  }
+  output (viv.core.Boolean)
+}

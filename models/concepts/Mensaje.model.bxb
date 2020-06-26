@@ -1,0 +1,15 @@
+structure (Mensaje) {
+  description (__DESCRIPTION__)
+  property (contacto) {
+    type (contacto)
+    min (Required) max (One)
+  }
+  property (ubicacion) {
+    type (MessageText)
+    min (Required) max (One)
+  }
+  property (geoPoint) {
+    type (geoPoint)
+    min (Required) max (One)
+  }
+}

@@ -1,0 +1,4 @@
+dialog (Elicitation) {
+  match: mensajeAlertaConfig (this)
+  template("Indique el mensaje deseado")
+}
